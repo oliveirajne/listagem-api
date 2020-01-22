@@ -111,6 +111,10 @@ header {
     margin-left: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+    -ms-overflow-style: none;
+}
+.description::-webkit-scrollbar {
+    display: none;
 }
 .result-item {
 
@@ -166,7 +170,13 @@ header {
     color:  #4E4E4E;
     font-weight: 400;
     font-size: 21px;
+    -ms-overflow-style: none;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.result-txt::-webkit-scrollbar {
+    display: none;
+}
+
 .image-div {
     /* background-color: yellow; */
     margin-left: 10px;
@@ -313,3 +323,50 @@ a {
     height: 0;
     width: 0;
 }
+
+@media (max-width:750px) {
+
+    header {
+        margin-top: 12px;
+        margin-right: 42px;
+    }
+    .search {
+        margin-top: 12px;
+    }
+    .search .rectangle-8 {
+        width: 256px;
+    }
+    .header-dir, .rectangle-4, .description {
+        display: none;
+    }
+    .header-txt1, .header-txt2 {
+        font-size: 16px;
+    }
+    .rectangle-3 {
+        width: 100%;
+    }
+    #paginate-results ul {
+        padding: 0;
+    }
+    #paginate-results ul li {
+        display: inline;
+        margin-right: 10px;
+        
+    }
+    #paginate-results ul li:first-child {
+        margin-left: 10px;
+        margin-right: 0;
+        color:  #D42026;
+        
+    }
+    #paginate-results ul li:last-child {
+        margin-right: 10px;
+        color:  #D42026;
+    }
+    #paginate-results ul li:nth-child(2) {
+        margin-left: 10px;
+    }
+    #paginate-results ul li:nth-child(7) {
+        margin-right: 0;
+    }
+}   
