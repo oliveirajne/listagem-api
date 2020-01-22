@@ -3,6 +3,7 @@
     width: 100vw;
     font-family: 'Roboto', sans-serif;
     overflow-y: scroll;    
+    margin-bottom: 12px;
 
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -205,8 +206,10 @@ header {
 }
 .box-paginate {
     display: block;
+
 }
 #paginate-results {
+
     align-items: center;
     display: flex;
     justify-content: center;
@@ -288,7 +291,11 @@ header {
 
 .box-footer {
     display: block;
+    position: absolute;
     height: 12px;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
 }
 .rectangle-footer {
     display: block;
@@ -298,15 +305,18 @@ header {
     left: 0;
     bottom: 0;
     background-color: #D42026;
+    margin: 0;
 }
-/* footer {
-    
+footer {
+    display: block;
+    position: fixed;
     left: 0;
     bottom: 0;
+    height: 12px;
     width: 100%;
-    color: white;
-    text-align: center;
-} */
+    margin: 0;
+    
+}
 a {
     text-decoration: none;
 }
